@@ -1,9 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
     const menu = document.getElementById("menu");
+    const hamburger = document.querySelector(".hamburger");
 
     window.toggleMenu = function () {
         menu.classList.toggle("hidden");
     };
+
+    hamburger.addEventListener("click", (event) => {
+        event.stopPropagation();
+        toggleMenu();
+    });
+
+    document.addEventListener("click", (event) => {
+        if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+            menu.classList.add("hidden");
+        }
+    });
 
     window.donate = function () {
         window.location.href = "https://www.paypal.com/donate";

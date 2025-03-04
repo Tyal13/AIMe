@@ -9,38 +9,77 @@
 </head>
 <body>
     <header>
-        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-        <div class="logo">AIMe</div>
-        <nav id="menu" class="hidden">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Project</a></li>
-                <li><a href="#progress">Progress</a></li>
-                <li><a href="#contribute">Contribute</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-left">
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <img class="icon" src="computer-icon.png" alt="Computer Icon">
+        </div>
+        <div class="logo"><img src="logo.png" alt="AIMe Logo"></div>
     </header>
 
-    <section id="home" class="hero">
-        <h1>Meet AIMe</h1>
-        <p>The future of intuitive note-taking powered by AI.</p>
-    </section>
+    <div id="menu" class="menu hidden">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#contribute">Contribute</a></li>
+        </ul>
+    </div>
 
-    <section id="about" class="about">
-        <h2>About AIMe</h2>
-        <p>AIMe listens to spoken ideas, categorizes, and archives them for easy recall.</p>
-    </section>
+    <div class="container">
+        <main class="grid-layout">
+            <section id="hero" class="hero">
+                <img src="hero-image.jpg" alt="AIMe Hero Image">
+            </section>
 
-    <section id="progress" class="progress">
-        <h2>Progress & Updates</h2>
-        <div id="github-updates">Loading updates...</div>
-    </section>
+            <section class="content-block">
+                <div class="image"><img src="image1.jpg" alt="AI Feature"></div>
+                <div class="text">
+                    <h2>AI-Powered Note Organization</h2>
+                    <p>AIMe categorizes and archives your notes using multi-layered AI.</p>
+                </div>
+            </section>
 
-    <section id="contribute" class="contribute">
-        <h2>Support AIMe</h2>
-        <button onclick="donate()">Donate via PayPal</button>
-        <button onclick="donateStripe()">Donate via Stripe</button>
-    </section>
+            <section class="content-block reverse">
+                <div class="text">
+                    <h2>Instant Recall</h2>
+                    <p>Never lose an idea again. AIMe provides quick retrieval of past notes.</p>
+                </div>
+                <div class="image"><img src="image2.jpg" alt="Instant Recall"></div>
+            </section>
+
+            <section class="content-block">
+                <div class="text">
+                    <h2>AI-Generated Insights</h2>
+                    <p>AIMe helps generate valuable insights from your notes automatically.</p>
+                </div>
+                <div class="image"><img src="image3.jpg" alt="AI Insights"></div>
+            </section>
+
+            <section id="scrolling-gallery">
+                <h2>AI-Generated Visuals</h2>
+                <div class="scroll-container">
+                    <img src="ai1.jpg" alt="AI Image 1">
+                    <img src="ai2.jpg" alt="AI Image 2">
+                    <img src="ai3.jpg" alt="AI Image 3">
+                </div>
+            </section>
+
+            <section id="media" class="media-container">
+                <h2>Explore AIMe in Action</h2>
+                <img src="code-preview.jpg" alt="Code Preview">
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>Company © 20XX - First Last</p>
+        <a href="#siteplan">Site Plan</a> | <a href="#contact">Contact Us</a>
+        <div class="social-icons">
+            <a href="#"><img src="github.png" alt="GitHub"></a>
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+        </div>
+    </footer>
 </body>
 </html>
