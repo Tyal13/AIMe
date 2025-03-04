@@ -54,6 +54,10 @@ header {
     height: auto;
 }
 
+video {
+    border-radius: 25px
+}
+
 /* Hero Section */
 .hero {
     background-color: #28414c;

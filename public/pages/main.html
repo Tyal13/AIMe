@@ -6,12 +6,14 @@
     <title>AIMe - The Future of Intuitive Note-Taking</title>
     <link rel="stylesheet" href="../styles/main.css">
     <script defer src="../js/main.js"></script>
+    <script src="https://kit.fontawesome.com/17e5a4fa43.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="header-left">
             <button class="hamburger" onclick="toggleMenu()">
-                <img src="../icons/hamburger-icon.png" alt="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                    alt="Menu"/></svg>
             </button>
             <img class="icon" src="../icons/computer-icon.png" alt="Computer Icon">
         </div>
@@ -34,11 +36,20 @@
     <div class="container">
         <main class="grid-layout">
             <section id="hero" class="hero">
-                <img src="../images/hero-image.jpg" alt="AIMe Hero Image">
+                <div class="video-container">
+                    <video autoplay loop muted playsinline>
+                        <source src="../videos/concept_v3.mp4" type="video/mp4" alt="AI Insights">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </section>
-
             <section class="content-block">
-                <div class="image-container"><img src="../images/image1.jpg" alt="AI Feature"></div>
+                <div class="video-container">
+                    <video autoplay loop muted playsinline>
+                        <source src="../videos/concept_v1.mp4" type="video/mp4" alt="AI-Powered Note">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
                 <div class="text-container">
                     <h2>AI-Powered Note Organization</h2>
                     <p>AIMe categorizes and archives your notes using multi-layered AI.</p>
@@ -52,9 +63,13 @@
                 </div>
                 <div class="image-container"><img src="../images/image2.jpg" alt="Instant Recall"></div>
             </section>
-
             <section class="content-block">
-                <div class="image-container"><img src="../images/image3.jpg" alt="AI Insights"></div>
+                <div class="video-container">
+                    <video autoplay loop muted playsinline>
+                        <source src="../videos/video1.mp4" type="video/mp4" alt="AI Insights">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
                 <div class="text-container">
                     <h2>AI-Generated Insights</h2>
                     <p>AIMe helps generate valuable insights from your notes automatically.</p>
