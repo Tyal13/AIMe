@@ -3,82 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIMe - The Future of Intuitive Note-Taking</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <script defer src="js/main.js"></script>
+    <title>Welcome to AIMe</title>
+    <link rel="stylesheet" href="styles/landing.css">
 </head>
 <body>
     <header>
-        <div class="header-left">
-            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-            <img class="icon" src="computer-icon.png" alt="Computer Icon">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./images/logo.png" alt="AIMe Logo">
+            </a>
         </div>
-        <div class="logo"><img src="logo.png" alt="AIMe Logo"></div>
     </header>
 
-    <div id="menu" class="menu hidden">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#contribute">Contribute</a></li>
-        </ul>
-    </div>
+    <section class="hero">
+        <h1>Welcome to AIMe</h1>
+        <p>The future of intuitive note-taking powered by AI.</p>
+        <button onclick="location.href='pages/main.html'">Explore AIMe</button>
+    </section>
 
-    <div class="container">
-        <main class="grid-layout">
-            <section id="hero" class="hero">
-                <img src="hero-image.jpg" alt="AIMe Hero Image">
-            </section>
+    <section class="about">
+        <h2>What is AIMe?</h2>
+        <p>AIMe listens to your spoken ideas, categorizes, and archives them for instant recall, ensuring creativity is never lost.</p>
+    </section>
 
-            <section class="content-block">
-                <div class="image"><img src="image1.jpg" alt="AI Feature"></div>
-                <div class="text">
-                    <h2>AI-Powered Note Organization</h2>
-                    <p>AIMe categorizes and archives your notes using multi-layered AI.</p>
-                </div>
-            </section>
-
-            <section class="content-block reverse">
-                <div class="text">
-                    <h2>Instant Recall</h2>
-                    <p>Never lose an idea again. AIMe provides quick retrieval of past notes.</p>
-                </div>
-                <div class="image"><img src="image2.jpg" alt="Instant Recall"></div>
-            </section>
-
-            <section class="content-block">
-                <div class="text">
-                    <h2>AI-Generated Insights</h2>
-                    <p>AIMe helps generate valuable insights from your notes automatically.</p>
-                </div>
-                <div class="image"><img src="image3.jpg" alt="AI Insights"></div>
-            </section>
-
-            <section id="scrolling-gallery">
-                <h2>AI-Generated Visuals</h2>
-                <div class="scroll-container">
-                    <img src="ai1.jpg" alt="AI Image 1">
-                    <img src="ai2.jpg" alt="AI Image 2">
-                    <img src="ai3.jpg" alt="AI Image 3">
-                </div>
-            </section>
-
-            <section id="media" class="media-container">
-                <h2>Explore AIMe in Action</h2>
-                <img src="code-preview.jpg" alt="Code Preview">
-            </section>
-        </main>
-    </div>
+    <section class="features">
+        <div class="feature">
+            <h3>AI-Powered Organization</h3>
+            <p>Advanced AI categorizes and tags your notes automatically.</p>
+        </div>
+        <div class="feature">
+            <h3>Instant Recall</h3>
+            <p>Retrieve past ideas and notes instantly with AIMe’s smart search.</p>
+        </div>
+        <div class="feature">
+            <h3>Collaborative Tools</h3>
+            <p>Work seamlessly with your team to enhance productivity.</p>
+        </div>
+    </section>
 
     <footer>
-        <p>Company © 20XX - First Last</p>
-        <a href="#siteplan">Site Plan</a> | <a href="#contact">Contact Us</a>
+        <p>Company © 2025 - Adam Herrmann</p>
+        <a href="pages/site-plan.html">Site Plan</a> | <a href="#contact">Contact Us</a>
         <div class="social-icons">
-            <a href="#"><img src="github.png" alt="GitHub"></a>
-            <a href="#"><img src="facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="icons/github.png" alt="GitHub"></a>
+            <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="icons/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="icons/twitter.png" alt="Twitter"></a>
         </div>
     </footer>
 </body>
