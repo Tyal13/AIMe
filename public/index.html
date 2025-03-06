@@ -4,17 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to AIMe</title>
-    <link rel="stylesheet" href="styles/landing.css">
-    <script src="https://kit.fontawesome.com/17e5a4fa43.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../public/styles/landing.css">
+    <link rel="stylesheet" href="../public/styles/components.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="./index.html">
-                <img src="./images/logo.png" alt="AIMe Logo">
-            </a>
+        <div class="header-left">
+          <!-- Hamburger Button -->
+          <button class="hamburger-button" id="hamburger-button">
+            <!-- Default burger icon -->
+            <img 
+              src="../public/icons/burger.png" 
+              alt="Menu" 
+              class="hamburger-icon" 
+              id="hamburger-icon"
+            />
+          </button>
+    
+          <!-- Example icon -->
+          <img 
+            class="icon" 
+            src="../public/icons/payment.png" 
+            alt="Computer Icon" 
+          />
         </div>
-    </header>
+    
+        <!-- Logo -->
+        <div class="logo">
+          <a href="../public/index.html">
+            <img src="../public/icons/logo.png" alt="AIMe Logo" />
+          </a>
+        </div>
+    
+        <!-- Hamburger popup menu -->
+        <div class="hamburger-popup" id="hamburger-popup">
+          <ul>
+            <li><a href="../public/index.html">HOME</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Groups</a></li>
+          </ul>
+        </div>
+      </header>
+    
+      <script src="../public/components/hamburger.js"></script>
 
     <section class="hero">
         <h1>Welcome to AIMe</h1>
@@ -44,7 +77,7 @@
 
     <footer>
         <p>Company © 2025 - Adam Herrmann</p>
-        <a href="pages/site-plan.html">Site Plan</a> | <a href="#contact">Contact Us</a>
+        <a href="pages/site-plan.html">Site Plan</a> | <a href="pages/contact.html">Contact Us</a>
         <div class="social-icons">
             <a href="#"><img src="icons/github.png" alt="GitHub"></a>
             <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
