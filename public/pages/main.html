@@ -3,35 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIMe - The Future of Intuitive Note-Taking</title>
+    <title>AIMe - The Future of Intuitive Note-Taking & Retention</title>
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/components.css">
     <script defer src="../js/main.js"></script>
-    <script src="https://kit.fontawesome.com/17e5a4fa43.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
-    <header>
-        <div class="header-left">
-            <button class="hamburger" onclick="toggleMenu()">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
-                    alt="Menu"/></svg>
-            </button>
-            <img class="icon" src="../icons/computer-icon.png" alt="Computer Icon">
-        </div>
-        <div class="logo">
-            <a href="../index.html">
-                <img src="../images/logo.png" alt="AIMe Logo">
-            </a>
-        </div>
-    </header>
 
-    <div id="menu" class="menu hidden">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#contribute">Contribute</a></li>
-        </ul>
+  <!-- HEADER (with hamburger menu) -->
+  <header>
+    <div class="header-left">
+      <!-- Hamburger Button -->
+      <button class="hamburger-button" id="hamburger-button">
+        <!-- Default burger icon -->
+        <img 
+          src="../icons/burger.png" 
+          alt="Menu" 
+          class="hamburger-icon" 
+          id="hamburger-icon"
+        />
+      </button>
+
+      <!-- Example icon -->
+      <img 
+        class="icon" 
+        src="../icons/payment.png" 
+        alt="Computer Icon" 
+      />
     </div>
+
+    <!-- Logo -->
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../icons/logo.png" alt="AIMe Logo" />
+      </a>
+    </div>
+
+    <!-- Hamburger popup menu -->
+    <div class="hamburger-popup" id="hamburger-popup">
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Groups</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <script src="../components/hamburger.js"></script>
+
+    
 
     <div class="container">
         <main class="grid-layout">
