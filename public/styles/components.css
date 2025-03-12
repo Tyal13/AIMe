@@ -1,84 +1,77 @@
 /* ========== Base/Reset (optional) ========== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* ========== HEADER COMPONENT ========== */
-  header {
-    background-color: #16252e;
-    color: #fff;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .header-left {
-    display: flex;
-    align-items: center;
-  }
-  
-  .header-left .icon {
-    width: 40px;
-    height: 40px;
-    margin-left: 1rem;
-  }
-  
-  /* ========== FOOTER COMPONENT ========== */
-  footer {
-    background-color: #28414c;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  /* ========== HAMBURGER COMPONENT ========== */
-  .hamburger-button {
-    background-color: #fff;
-    border: 2px solid #000;
-    border-radius: 8px;
-    padding: 8px 12px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    outline: none;
-  }
-  
-  .hamburger-button:hover {
-    background-color: #d3bd96; /* Gold color on hover */
-  }
-  
-  .hamburger-icon {
-    width: 24px;
-    height: 24px;
-  }
-  
-  /* Popup menu hidden by default */
-  .hamburger-popup {
-    display: none;
-    position: absolute;
-    /* Adjust to position the menu below your header */
-    top: 60px;
-    left: 1rem;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    border-radius: 8px;
-    padding: 10px;
-  }
-  
-  .hamburger-popup ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .hamburger-popup li {
-    margin: 5px 0;
-  }
-  
-  .hamburger-popup a {
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== HEADER COMPONENT ========== */
+header {
+  background-color: #16252e;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left .icon {
+  width: 40px;
+  height: 40px;
+  margin-left: 1rem;
+}
+
+/* ========== HAMBURGER COMPONENT ========== */
+.hamburger-button {
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+}
+
+.hamburger-button:hover {
+  background-color: #d3bd96; /* Gold color on hover */
+}
+
+.hamburger-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Popup menu hidden by default */
+.hamburger-popup {
+  display: none;
+  position: absolute;
+  /* Adjust to position the menu below your header */
+  top: 60px;
+  left: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.hamburger-popup ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hamburger-popup li {
+  margin: 5px 0;
+}
+
+.hamburger-popup a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
