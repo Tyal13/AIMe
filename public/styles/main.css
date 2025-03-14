@@ -20,39 +20,6 @@ body {
     align-items: start;
 }
 
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #20343e;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative;
-    grid-column: span 3;
-}
-
-.logo img {
-    width: 80px;
-    height: auto;
-    border-radius: 50%;
-}
-
-.hamburger {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.hamburger img {
-    width: 40px;
-    height: auto;
-}
-
-.icon {
-    width: 40px;
-    height: auto;
-}
 
 video {
     border-radius: 25px

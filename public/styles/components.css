@@ -7,12 +7,45 @@
 
 /* ========== HEADER COMPONENT ========== */
 header {
-  background-color: #16252e;
-  color: #fff;
-  padding: 1rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  justify-content: space-between;
+  padding: 20px;
+  background-color: #20343e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  grid-column: span 3;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+  position: fixed
+  border-radius: 50%;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger img {
+  width: 40px;
+  height: auto;
+}
+
+.icon {
+  width: 40px;
+  height: auto;
 }
 
 .header-left {
@@ -21,8 +54,6 @@ header {
 }
 
 .header-left .icon {
-  width: 40px;
-  height: 40px;
   margin-left: 1rem;
 }
 
@@ -50,7 +81,6 @@ header {
 .hamburger-popup {
   display: none;
   position: absolute;
-  /* Adjust to position the menu below your header */
   top: 60px;
   left: 1rem;
   background-color: #ffffff;
@@ -74,4 +104,3 @@ header {
   color: #000;
   font-weight: 500;
 }
-
