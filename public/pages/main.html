@@ -3,118 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIMe - The Future of Intuitive Note-Taking & Retention</title>
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/components.css">
-    <script defer src="../js/main.js"></script>
+    <title>Welcome to AIMe</title>
+    <link rel="stylesheet" href="../styles/realmain.css">
 </head>
 <body>
-<header>
-    <button class="hamburger-button" id="hamburger-button">
-        <img src="../icons/burger.png" alt="Menu" class="hamburger-icon" />
-    </button>
-
-    <a href="../pages/contribute.html" class="donation-icon">
-        <img class="icon" src="../icons/payment.png" alt="Donate">
-    </a>
-
-    <a href="../index.html" class="logo">
-        <img src="../icons/logo.png" alt="AIMe Logo" />
-    </a>
-</header>
-
-    <div class="hamburger-popup" id="hamburger-popup">
-        <ul>
+    <header>
+        <div class="header-left">
+          <!-- Hamburger Button -->
+          <button class="hamburger-button" id="hamburger-button">
+            <!-- Default burger icon -->
+            <img 
+              src="../icons/burger.png" 
+              alt="Menu" 
+              class="hamburger-icon" 
+              id="hamburger-icon"
+            />
+          </button>
+    
+          <!-- Example icon -->
+          <img 
+            class="icon" 
+            src="../icons/payment.png" 
+            alt="Computer Icon" 
+          />
+        </div>
+    
+        <!-- Logo -->
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../icons/logo.png" alt="AIMe Logo" />
+          </a>
+        </div>
+    
+        <!-- Hamburger popup menu -->
+        <div class="hamburger-popup" id="hamburger-popup">
+          <ul>
             <li><a href="../index.html">HOME</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">Groups</a></li>
-        </ul>
-    </div>
+          </ul>
+        </div>
+      </header>
     
-    <script src="../components/hamburger.js"></script>
+      <script src="../components/realmain.js"></script>
 
-    <div class="container">
-        <main class="grid-layout">
-            <section id="hero" class="hero">
-                <div class="video-container">
-                    <video autoplay loop muted playsinline>
-                        <source src="../videos/concept_v3.mp4" type="video/mp4" alt="AI Insights">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </section>
-            <section class="content-block">
-                <div class="video-container">
-                    <video autoplay loop muted playsinline>
-                        <source src="../videos/concept_v1.mp4" type="video/mp4" alt="AI-Powered Note">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="text-container">
-                    <h2>AI-Powered Note Organization</h2>
-                    <p>AIMe categorizes and archives your notes using multi-layered AI.</p>
-                </div>
-            </section>
 
-            <section class="content-block reverse">
-                <div class="text-container">
-                    <h2>Instant Recall</h2>
-                    <p>Never lose an idea again. AIMe provides quick retrieval of past notes.</p>
-                </div>
-                <div class="image-container"><img src="../images/image2.jpg" alt="Instant Recall"></div>
-            </section>
-            <section class="content-block">
-                <div class="video-container">
-                    <video autoplay loop muted playsinline>
-                        <source src="../videos/video1.mp4" type="video/mp4" alt="AI Insights">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="text-container">
-                    <h2>AI-Generated Insights</h2>
-                    <p>AIMe helps generate valuable insights from your notes automatically.</p>
-                </div>
-            </section>
+      <section class="hero">
+        <h2>Explore AIMe in Action</h2>
+        <div class="slideshow-container" style="max-width:800px; height:450px; margin:0 auto;">
+          <div class="mySlides fade">
+            <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+              <source src="../videos/concept_v2.mp4" type="video/mp4" alt="AI Video 1">
+              Your browser does not support the video tag.
+            </video>
+            <div class="text">Caption Text</div>
+          </div>
+    
+          <div class="mySlides fade">
+            <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+              <source src="../videos/concept_v6.mp4" type="video/mp4" alt="AI Video 2">
+              Your browser does not support the video tag.
+            </video>
+            <div class="text">Caption Two</div>
+          </div>
+      
+          <div class="mySlides fade">
+            <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+              <source src="../videos/concept_v7.mp4" type="video/mp4" alt="AI Video 3">
+              Your browser does not support the video tag.
+            </video>
+            <div class="text">Caption Three</div>
+          </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <script>
+          let slideIndex = 0;
+          showSlides();
+      
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000);
+          }
+        </script>
+      </section>
 
-            <section class="content-block reverse">
-                <div class="text-container">
-                    <h2>Organized Collaboration</h2>
-                    <p>Work together with teammates on structured, AI-enhanced notes.</p>
-                </div>
-                <div class="image-container"><img src="../images/image4.jpg" alt="Collaboration"></div>
-            </section>
+    <section class="about">
+        <h2>What is AIMe?</h2>
+        <p>AIMe listens to your spoken ideas, categorizes, and archives them for instant recall, ensuring creativity is never lost.</p>
+    </section>
 
-            <section id="scrolling-gallery">
-                <h2>AI-Generated Visuals</h2>
-                <div class="scroll-container">
-                    <img src="../images/ai1.jpg" alt="AI Image 1">
-                    <img src="../images/ai2.jpg" alt="AI Image 2">
-                    <img src="../images/ai3.jpg" alt="AI Image 3">
-                </div>
-            </section>
+    <section class="features">
+        <div class="feature">
+            <h3>AI-Powered Organization</h3>
+            <p>Advanced AI categorizes and tags your notes automatically.</p>
+        </div>
+        <div class="feature">
+            <h3>Instant Recall</h3>
+            <p>Retrieve past ideas and notes instantly with AIMe’s smart search.</p>
+        </div>
+        <div class="feature">
+            <h3>Collaborative Tools</h3>
+            <p>Work seamlessly with your team to enhance productivity.</p>
+        </div>
+    </section>
 
-            <section id="media" class="media-container">
-                <h2>Explore AIMe in Action</h2>
-                <img src="../images/code-preview.jpg" alt="Code Preview">
-            </section>
-        </main>
-    </div>
 
     <footer>
-        <div class="footer-content">
-            <p>Company © 2025 - Adam Herrmann</p>
-            <nav>
-                <a href="../pages/site-plan.html">Site Plan</a> | 
-                <a href="#contact">Contact Us</a>
-            </nav>
-            <div class="social-icons">
-                <a href="https://github.com/Tyal13"><img src="../icons/github.png" alt="GitHub"></a>
-                <a href="#"><img src="../icons/facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="../icons/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="../icons/twitter.png" alt="Twitter"></a>
-            </div>
+        <p>Company © 2025 - Adam Herrmann</p>
+        <a href="../pages/site-plan.html">Site Plan</a> | <a href=".../pages/contact.html">Contact Us</a>
+        <div class="social-icons">
+            <a href="https://github.com/Tyal13"><img src="..icons/github.png" alt="GitHub"></a>
+            <a href="#"><img src="../icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="../icons/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="../icons/twitter.png" alt="Twitter"></a>
         </div>
     </footer>
 </body>
 </html>
+
+
+

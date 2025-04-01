@@ -1,34 +1,5 @@
-/* ========== Base/Reset (optional) ========== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* ========== HEADER COMPONENT ========== */
-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  padding: 20px;
-  background-color: #20343e;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: relative;
-  grid-column: span 3;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
-
-.logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .logo img {
-  width: 80px;
-  height: auto;
-  position: fixed
+  width: 100px;
   border-radius: 50%;
 }
 
@@ -103,4 +74,44 @@ header {
   text-decoration: none;
   color: #000;
   font-weight: 500;
+}
+
+/* ========== Automatic Slideshow ========== */
+
+.hero {
+  /* Hero container styling */
+  max-width: 900px; /* or 800px */
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  overflow: hidden; /* Ensures no content overflows the container */
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  max-width: 800px;
+  height: 450px; /* Fixed height */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Hide all slides by default and position them absolutely */
+.mySlides {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style each video or image to fill the container */
+.mySlides video,
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }

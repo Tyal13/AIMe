@@ -13,11 +13,6 @@ header {
     background-color: #20343e;
 }
 
-.logo img {
-    width: 100px;
-    border-radius: 50%;
-}
-
 .hero {
     padding: 100px 20px;
     background-color: #28414c;
